@@ -1,0 +1,16 @@
+/* Tela de login */
+.lg{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+.lg .l{background:linear-gradient(160deg,#0a1a3a,#06122a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:30px;text-align:center;background-image:linear-gradient(rgba(0,200,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,255,.04) 1px,transparent 1px);background-size:38px 38px}
+.lg .logo{width:70px;height:70px;font-size:26px;border-radius:18px}
+.lg h2{color:var(--cy);font-size:28px}
+.alert{border:1px solid rgba(239,68,68,.4);background:rgba(239,68,68,.08);border-radius:12px;padding:16px 28px}
+.alert small{color:var(--bad);font-family:'JetBrains Mono',monospace;font-size:11px}
+.alert b{display:block;color:#fca5a5;font-size:18px;margin:4px 0}
+.lg .r{display:flex;align-items:center;justify-content:center;padding:30px}
+.lg form{width:min(380px,100%)}
+.lg .fld{margin-bottom:16px;position:relative}
+.eye{position:absolute;right:8px;top:29px;background:0;border:0;color:var(--mut);cursor:pointer;padding:4px 8px}
+.opts{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;font-size:13px;color:var(--mut)}
+.opts label{display:flex;gap:7px;align-items:center;margin:0}.opts input{width:auto}
+#msg{margin-bottom:10px;font-size:13px;min-height:18px}
+@media(max-width:800px){.lg{grid-template-columns:1fr}.lg .l{display:none}}

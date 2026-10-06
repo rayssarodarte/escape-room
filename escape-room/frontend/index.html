@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login — Escape Room de Computação</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="lg">
+      <section class="l">
+        <div class="logo">ER</div>
+        <h2>ESCAPE ROOM</h2>
+        <p>de Computação</p>
+        <div class="alert">
+          <small>⚠ ALERTA DO SISTEMA</small><b>O Sistema Foi Invadido</b
+          ><span class="lbl">Sistema de Gerenciamento e Acompanhamento</span>
+        </div>
+        <p class="lbl" style="max-width: 300px">
+          Faça login para acessar o painel de controle e gerenciar as atividades
+          do Escape Room.
+        </p>
+      </section>
+      <section class="r">
+        <form id="f" novalidate>
+          <h1>Bem-vindo!</h1>
+          <p class="lbl" style="margin: 4px 0 22px">
+            Entre para gerenciar e acompanhar as atividades.
+          </p>
+          <div class="fld">
+            <label for="login">Usuário ou e-mail</label
+            ><input id="login" autocomplete="username" />
+            <div class="err" id="e1"></div>
+          </div>
+          <div class="fld">
+            <label for="senha">Senha</label
+            ><input
+              id="senha"
+              type="password"
+              autocomplete="current-password"
+            />
+            <button
+              type="button"
+              class="eye"
+              id="eye"
+              aria-label="Mostrar ou ocultar senha"
+            >
+              👁
+            </button>
+            <div class="err" id="e2"></div>
+          </div>
+          <div class="opts">
+            <label><input type="checkbox" id="lembrar" /> Lembrar-me</label
+            ><a href="#" id="esq">Esqueci minha senha</a>
+          </div>
+          <div id="msg" role="alert"></div>
+          <button class="btn pri blk" id="ok">Entrar</button>
+          <p class="lbl mono" style="text-align: center; margin-top: 22px">
+            Escape Room de Computação v1.0 · 2026
+          </p>
+        </form>
+      </section>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>
